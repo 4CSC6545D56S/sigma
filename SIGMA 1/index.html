@@ -11,12 +11,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.10.0/dist/tf.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
 
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
 </head>
-
 <body>
 
     <!-- Bouton menu hamburger -->
@@ -382,31 +381,53 @@
                     <h2>Probabilités Statistiques</h2>
                     
                     <!-- Boîte d'information détaillée sur les modèles probabilistes -->
-                    <div class="info-box">
-                        <p>Générez des combinaisons basées sur différents modèles probabilistes.</p>
 
-                        <h4>Modèle de Probabilités</h4>
-                        <p>
-                        <p>Les simulations sont des algorithmes utilisés dans le but d'estimer la probabilité
-                            d'occurrence d'un scénario dans lequel interviennent des paramètres aléatoires. C'est une
-                            technique statistique permettant de comprendre l'influence de l'incertitude dans les modèles
-                            de Probabilités.</p>
-                        <p><strong>Distributions Statistiques Utilisées :</strong>
-                        <p></p>
-                        <p><strong>Loi de Poisson :</strong> Modélise la probabilité qu'un certain nombre d'événements
+                    <div class="info-box">
+                        <p style="font-size: 1.05em; line-height: 1.5; margin: 10px 0;">
+
+                            Générez des combinaisons basées sur différents modèles probabilistes. Les modèles sont 
+                            des algorithmes utilisés dans le but d'estimer la probabilité d'occurrence d'un scénario dans 
+                            lequel interviennent des paramètres aléatoires. <br> 
+                        
+                        <p>Modèles de Probabilités :<p>
+
+                        <p style="line-height: 1.5; margin: 10px 0;">
+
+                        <strong>Loi de Poisson :</strong> Modélise la probabilité qu'un certain nombre d'événements
                             (apparitions d'un numéro) se produisent dans un intervalle de temps donné. Utile pour les
-                            faibles fréquences (numéros "en retard").</p>
-                        <p><strong>Distribution Binomiale :</strong> Modélise le nombre de succès (apparitions d'un
+                            faibles fréquences (numéros "en retard"). <br>
+
+                        <p style="line-height: 1.5; margin: 10px 0;">
+
+                        <strong>Loi de Zipf :</strong> Application de la loi de Zipf pour modéliser la distribution 
+                            rang-fréquence et identifier les patterns hiérarchiques.</p>
+
+                        <p style="line-height: 1.5; margin: 10px 0;">
+
+                        <strong>Distribution Binomiale :</strong> Modélise le nombre de succès (apparitions d'un
                             numéro) dans une séquence de n tirages indépendants, chacun ayant une probabilité p de
                             succès.</p>
-                        <p><strong>Distribution de Dirichlet :</strong> Distribution complexe souvent utilisée pour
+
+                        <p style="line-height: 1.5; margin: 10px 0;">
+
+                        <strong>Distribution de Dirichlet :</strong> Distribution complexe souvent utilisée pour
                             modéliser des proportions de catégories. Dans le contexte du Loto, elle peut modéliser la
                             probabilité que les cinq numéros choisis se répartissent de manière déséquilibrée sur les
                             quatre dizaines.</p>
-                        <p><strong>Tests Statistiques :</strong></p>
-                        <p><strong>Test T Student :</strong> Permet de comparer la moyenne d'une série de numéros avec
+
+                        <p style="line-height: 1.5; margin: 10px 0;">
+
+                        <strong>Distribution Gamma :</strong>  Modélisation des temps d'attente entre événements.
+                            Son rôle est d'identifier les numéros ayant une probabilité élevée de réapparaître.</p>
+
+                        <p style="line-height: 1.5; margin: 10px 0;">
+
+                        <strong>Test T Student :</strong> Permet de comparer la moyenne d'une série de numéros avec
                             une valeur théorique pour déterminer si l'écart est significatif.</p>
-                        <p><strong>Test du Chi-carré (χ²) :</strong> Le test essentiel pour le Loto. Il permet de
+
+                        <p style="line-height: 1.5; margin: 10px 0;">
+
+                        <strong>Test du Chi-carré (χ²) :</strong> Le test essentiel pour le Loto. Il permet de
                             vérifier si la distribution observée des fréquences des numéros est conforme à une
                             distribution uniforme théorique.</p>
                     </div>
@@ -483,7 +504,7 @@
 
                     <!-- Avertissement important -->
                     <div class="info-box" style="margin-top: 20px;">
-                        Ces Probabilités sont purement statistiques. La loterie est un jeu de hasard où chaque tirage
+                        Les Probabilités sont purement statistiques. La loterie est un jeu de hasard où chaque tirage
                         est indépendant. Aucun algorithme ne peut garantir un gain.
                     </div>
                 </div>
